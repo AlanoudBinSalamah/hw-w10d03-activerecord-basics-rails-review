@@ -209,11 +209,11 @@ Review the `README.md` file from today's lesson [here](https://github.com/WDI-Ho
 
 - In express we built our routes inside of our controller, where do you put routes in a rails app?
   ```
-  # your answer here
+  In our controllers
   ```
 - Should a rails model be lower-case and plural, upper-case and plural, lower-case and singular, or upper-case and singular?
   ```
-  # your answer here
+  upper-case and singular
   ```
 - What kind of files belong in the `assets` directory?
   ```
