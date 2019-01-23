@@ -19,7 +19,7 @@ For all solutions, pretend that you have a model called `Cheese`.
   ```
 
   ```ruby
-  # your active record solution
+ Cheese.create({name:'Roquefort', color:'yellow', origin:'French', stink_level:5})
   ```
 
 - Charolais, a white french cheese with a stink level of 5
@@ -28,7 +28,7 @@ For all solutions, pretend that you have a model called `Cheese`.
   ```
 
   ```ruby
-  # your active record solution
+  Chease.create({name:'Charolais', color:'white', origin:'French', stink_level:5})
   ```
 
 - Hooligan, a yellow American cheese with a stink level of 3
@@ -37,7 +37,7 @@ For all solutions, pretend that you have a model called `Cheese`.
   ```
 
   ```ruby
-  # your active record solution
+  Chease.create({name:'Hooligan', color:'yellow', origin:'American', stink_level:3})
   ```
 - Teleme, a white american cheese with a stink level of 2
   ```sql
@@ -45,7 +45,7 @@ For all solutions, pretend that you have a model called `Cheese`.
   ```
 
   ```ruby
-  # your active record solution
+  Cheese.create({name:'Teleme', color:'white', origin:'American',stink_level;2})
   ```
 - And then we inserted a few more cheeses, but I think you get the point.  Moving on!
 
@@ -59,7 +59,7 @@ For all solutions, pretend that you have a model called `Cheese`.
   ```
 
   ```ruby
-  # your active record solution
+  Cheese.all
   ```
 
 - Find all the French cheeses
@@ -69,7 +69,7 @@ For all solutions, pretend that you have a model called `Cheese`.
   ```
 
   ```ruby
-  # your active record solution
+ Cheese.Where({origin:'French'})
   ```
 - Find all the English cheeses
     
@@ -78,7 +78,7 @@ For all solutions, pretend that you have a model called `Cheese`.
   ```
 
   ```ruby
-  # your active record solution
+  Cheese.where({origin:'English'})
   ```
 - Find all cheeses with a stink level of 2
     
@@ -87,7 +87,7 @@ For all solutions, pretend that you have a model called `Cheese`.
   ```
 
   ```ruby
-  # your active record solution
+  Cheese.Where({stink_level:2})
   ```
 - Find all cheeses with a stink level of 10
     
@@ -96,7 +96,7 @@ For all solutions, pretend that you have a model called `Cheese`.
   ```
 
   ```ruby
-  # your active record solution
+ Cheese.Where({stink_level:10})
   ```
 - Find all French cheeses with a stink level of 5
     
@@ -105,7 +105,7 @@ For all solutions, pretend that you have a model called `Cheese`.
   ```
 
   ```ruby
-  # your active record solution
+ Cheese.Where({origin:'French',stink_level:5})
   ```
 - Find all Irish cheeses with a stink level of 6
     
@@ -114,7 +114,7 @@ For all solutions, pretend that you have a model called `Cheese`.
   ```
 
   ```ruby
-  # your active record solution
+ Cheese.Where({origin:'Irish',stink_level:6})
   ```
 - Find all cheeses with a stink level of at least 4, but no greater than 8.
     
@@ -123,7 +123,7 @@ For all solutions, pretend that you have a model called `Cheese`.
   ```
 
   ```ruby
-  # your active record solution
+ Cheese.Where({"stink_level >=4 OR stink_level <=8})
   ```
 - Find all American and English cheeses.
     
@@ -132,7 +132,7 @@ For all solutions, pretend that you have a model called `Cheese`.
   ```
 
   ```ruby
-  # your active record solution
+ Cheese.Where({origin:'American' OR origin:'English'})
   ```
 - Find all cheeses that are not from France.
     
@@ -141,7 +141,7 @@ For all solutions, pretend that you have a model called `Cheese`.
   ```
 
   ```ruby
-  # your active record solution
+  Cheese.Where.not({origin:'French'})
   ```
 
 
@@ -156,7 +156,7 @@ The cheese game is changing constantly. Let's update our cheeses.
   ```
 
   ```ruby
-  # your active record solution
+ 
   ```
 - Change the color of Teleme to "mauve"
     
@@ -165,7 +165,7 @@ The cheese game is changing constantly. Let's update our cheeses.
   ```
 
   ```ruby
-  # your active record solution
+  Cheese.Update
   ```
 - Delete the Hooligan cheese
     
@@ -192,7 +192,7 @@ The cheese game is changing constantly. Let's update our cheeses.
   ```
 
   ```ruby
-  # your active record solution
+ Cheese.create({name:'Monterey Jack', color:'White', origin:'American', stink_level;0})
   ```
 - Delete Durrus
     
